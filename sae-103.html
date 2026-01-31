@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 1.03 - Dispositifs de Transmission">
+    <title>Portfolio | SAÉ 1.03 Transmission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 1.03 - Découverte des Dispositifs de Transmission (Fibre & Cuivre)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Caractérisation et validation des supports
+                    de transmission physique.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p><strong>Cadre :</strong> Introduction à la couche physique du modèle OSI.</p>
+                    <p style="margin-top: 1rem;"><strong>Objectif :</strong> Caractériser et valider des supports de
+                        transmission (Fibre Optique et Câble Cuivre coaxial/RJ45) en utilisant des appareils de mesure
+                        professionnels.</p>
+                    <p style="margin-top: 1rem;"><strong>Mon Rôle :</strong> J'ai réalisé les mesures de photométrie et
+                        de réflectométrie en binôme, interprété les courbes et calculé les atténuations.</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Compétences & Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC12.01 : Mesurer et analyser</h4>
+                        <p>Mesurer et analyser les signaux (Validé par l'utilisation de l'oscilloscope et du photomètre
+                            pour quantifier les pertes et les distances).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC12.03 : Déployer supports</h4>
+                        <p>Déployer des supports de transmission (Validé par la manipulation et le raccordement des
+                            fibres et câbles coaxiaux).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 1rem;"><strong>Fibre Optique (Photométrie) :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Calibrage de la source optique et du photomètre (Viavi) à 1550 nm.</li>
+                            <li>Mesure de l'atténuation sur une liaison inconnue (Liaison L2).</li>
+                            <li><em>Résultat :</em> Mesure d'une perte de 1,64 dB, validant la qualité de la liaison.
+                            </li>
+                            <li><em>Sécurité :</em> Application stricte des consignes concernant le laser (classement,
+                                risque oculaire).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Câble Cuivre (Réflectométrie / TDR) :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Utilisation de la méthode DTF (Distance To Fault) et d'un oscilloscope pour mesurer la
+                                longueur d'un câble coaxial (RG58) et d'un câble RJ45.</li>
+                            <li>Calcul de la vitesse de propagation (NVP = 0.66c).</li>
+                            <li><em>Analyse comparative :</em> J'ai comparé la mesure automatique du DTF (3,02m) avec
+                                mon calcul manuel à l'oscilloscope (2,97m) pour vérifier la précision des instruments
+                                (écart minime de 5cm).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves (Traces)</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/sae103-fibre.png"
+                            alt="Mesure de puissance optique sur le photomètre Viavi (-7,64 dBW)"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Mesure de
+                            puissance optique sur le photomètre Viavi (-7,64 dBW)</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/sae103-dtf.png"
+                            alt="Analyse de réflectométrie (DTF) montrant le pic de réflexion en bout de câble"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Analyse de
+                            réflectométrie (DTF) montrant le pic de réflexion en bout de câble</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Compétence technique :</strong> J'ai appris à utiliser des outils de mesure industriels
+                        (Oscilloscope, Réflectomètre). J'ai compris que la théorie (v=d/t) s'applique concrètement au
+                        diagnostic réseau.</p>
+                    <p style="margin-top: 1rem;"><strong>Rigueur :</strong> Cette SAÉ m'a montré l'importance du
+                        calibrage : sans une référence zéro correcte, toutes les mesures d'atténuation sont fausses.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

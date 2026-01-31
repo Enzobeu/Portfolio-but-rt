@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 3.01 - Projet Krypcom">
+    <title>Portfolio | SAÉ 3.01 Krypcom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 3.01 - Mise en œuvre d'un système de transmission (Projet Krypcom)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Projet d'interconnexion réseau et routage
+                    backbone.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p><strong>Scénario :</strong> J'ai intégré l'équipe de l'opérateur Krypcom chargé de connecter les
+                        sites du client PolyLED (Siège à Caen, Usine à Lyon, 350 postes au total).</p>
+                    <p style="margin-top: 1rem;"><strong>Mission :</strong> Mon rôle spécifique au sein du lot
+                        'Infrastructure' était d'assurer l'interconnexion des sites via le backbone opérateur.</p>
+                    <p style="margin-top: 1rem;"><strong>Responsabilité :</strong> J'étais en charge du Routage Backbone
+                        et LAN (Protocole OSPF).</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Compétences & Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC22.03 : Connexion Multi-site</h4>
+                        <p>Mettre en place une connexion multi-site via un réseau opérateur. (Validé par la config OSPF
+                            inter-sites).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC22.04 : Administration Opérateur</h4>
+                        <p>Administrer les réseaux d’accès des opérateurs. (Validé par la gestion du backbone Krypcom).
+                        </p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC22.01 : Systèmes de Transmission</h4>
+                        <p>Déployer des systèmes de transmissions complexes. (Validé par la compréhension de la boucle
+                            optique CWDM).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation technique</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li>Travail sur une simulation GNS3 avec des routeurs virtuels Cisco IOL pour simuler le backbone.
+                    </li>
+                    <li>Configuration OSPF Multi-Area : mise en place d'une Area 0 pour le backbone et d'aires
+                        spécifiques pour les sites clients afin de segmenter le trafic.</li>
+                    <li>Configuration des VLANs (Admin, RH, Production) et le routage inter-VLAN pour assurer la
+                        sécurité et l'isolation des services.</li>
+                    <li>Gestion de la redistribution de la route par défaut pour l'accès Internet.</li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves (Traces)</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/Schéma-GNS3.png"
+                            alt="Topologie GNS3 simulant le backbone opérateur Krypcom et les sites PolyLED"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Topologie
+                            GNS3 simulant le backbone opérateur Krypcom et les sites PolyLED</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/Ospf.png"
+                            alt="Extrait de configuration Cisco : Vérification des voisins OSPF et de la table de routage"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Extrait de
+                            configuration Cisco : Vérification des voisins OSPF et de la table de routage</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Analyse Réflexive (Auto-évaluation)</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Difficulté :</strong> La complexité principale était de bien isoler le trafic client du
+                        trafic opérateur et de gérer les zones OSPF sans créer de boucles de routage.</p>
+                    <p style="margin-top: 1rem;"><strong>Solution :</strong> J'ai dû rigoureusement respecter le plan
+                        d'adressage IP défini en amont et vérifier mes contiguïtés OSPF étape par étape.</p>
+                    <p style="margin-top: 1rem;"><strong>Bilan :</strong> Ce projet m'a permis de comprendre
+                        concrètement l'architecture d'un réseau opérateur (ISP) et de maîtriser le routage dynamique
+                        avancé.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

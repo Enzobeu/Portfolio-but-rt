@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilan de compétences Semestre 3 - Parcours Cyber">
+    <title>Portfolio | Bilan S3</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #eee;
+            border-radius: 10px;
+            margin-top: 0.5rem;
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            width: 0%;
+            /* Animated later or static */
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html">Mes SAÉ</a></li>
+                    <li><a href="bilan.html" class="active">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Bilan de Compétences - Semestre 3 (Parcours Cyber)</h2>
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <p>Synthèse réflexive de mon acquisition de compétences sur ce semestre de spécialisation.</p>
+                </div>
+
+                <div class="bilan-container">
+
+                    <!-- Compétence RT1 & RT2 -->
+                    <div class="competence-block" style="border-left-color: #2ecc71;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4>Compétence RT1 & RT2 : Administrer et Connecter</h4>
+                            <span style="font-weight: bold; color: #2ecc71;">Niveau : Avancé</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 85%; background: #2ecc71;"></div>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>Analyse :</strong> Ce semestre a marqué un tournant. Je
+                            ne configure plus juste des équipements isolés, je conçois des architectures complètes. Avec
+                            la SAÉ 3.01 (Backbone Opérateur) et la SAÉ 3.03 (Redondance HSRP), j'ai compris l'importance
+                            de la haute disponibilité et du routage dynamique (OSPF).</p>
+                        <div
+                            style="margin-top: 1rem; background: #e8f8f5; padding: 1rem; border-radius: 4px; border-left: 3px solid #2ecc71;">
+                            <strong>Point fort :</strong> Maîtrise du stacking et des protocoles de redondance.
+                        </div>
+                    </div>
+
+                    <!-- Compétence Cyber -->
+                    <div class="competence-block" style="border-left-color: #e74c3c;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4>Compétence Cyber : Sécuriser un S.I.</h4>
+                            <span style="font-weight: bold; color: #e74c3c;">Niveau : Intermédiaire ++</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 70%; background: #e74c3c;"></div>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>Analyse :</strong> J'ai découvert l'envers du décor. En
+                            apprenant à attaquer (Pentest SAÉ 3.03, attaque DCSync), j'ai beaucoup mieux compris comment
+                            défendre. Je sais maintenant identifier des mauvaises configurations (mots de passe en
+                            clair, droits trop élevés).</p>
+                        <div
+                            style="margin-top: 1rem; background: #fdedec; padding: 1rem; border-radius: 4px; border-left: 3px solid #e74c3c;">
+                            <strong>Point à améliorer :</strong> Je dois encore approfondir l'écriture de scripts pour
+                            automatiser la sécurisation (Hardening).
+                        </div>
+                    </div>
+
+                    <!-- Compétence RT3 -->
+                    <div class="competence-block" style="border-left-color: #3498db;">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4>Compétence RT3 : Programmation & Outils</h4>
+                            <span style="font-weight: bold; color: #3498db;">Niveau : En progression</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 55%; background: #3498db;"></div>
+                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>Analyse :</strong> L'utilisation d'outils comme GNS3,
+                            Wireshark, et les scripts Python/Bash (NetExec, Impacket) est devenue quotidienne. Je
+                            commence à voir l'automatisation non plus comme une option, mais comme une nécessité pour
+                            l'ingénieur réseau.</p>
+                    </div>
+
+                    <!-- Conclusion Globale -->
+                    <div
+                        style="background: var(--primary-color); color: white; padding: 2rem; border-radius: 0.5rem; margin-top: 2rem; text-align: center; box-shadow: var(--shadow);">
+                        <h4
+                            style="color: white; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 0.5rem; display: inline-block; margin-bottom: 1rem;">
+                            Conclusion Globale</h4>
+                        <p style="font-size: 1.1rem; font-style: italic;">
+                            "Ce semestre confirme mon choix de m'orienter vers l'ingénierie réseau et la cybersécurité.
+                            Je me sens prêt pour des architectures plus complexes."
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

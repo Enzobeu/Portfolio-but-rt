@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 3.Cyber.03 - Projet Pellet-SA">
+    <title>Portfolio | SAÉ 3.Cyber.03 Pellet-SA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 3.Cyber.03 - Conception d'une infrastructure sécurisée et redondante (Projet Pellet-SA)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Refonte réseau haute disponibilité pour
+                    Pellet-SA.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p><strong>Scénario :</strong> Refonte complète du réseau de l'entreprise Pellet-SA (Énergies
+                        renouvelables) pour moderniser une infrastructure obsolète.</p>
+                    <p style="margin-top: 1rem;"><strong>Enjeu :</strong> Le client exigeait une haute disponibilité
+                        (Redondance) et une segmentation stricte, bien que la sécurité avancée soit prévue dans une
+                        phase ultérieure.</p>
+                    <p style="margin-top: 1rem;"><strong>Mon Rôle :</strong> Membre de l'équipe Infrastructure,
+                        responsable de la couche 'Cœur de Réseau' et de la redondance.</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Compétences & Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC21.02 : Sécurité de base</h4>
+                        <p>Configurer les fonctions de base de la sécurité d'un réseau (Validé par la segmentation VLAN
+                            et la sécurisation des accès SSH).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC24.02 : Sécurisation Infra</h4>
+                        <p>Mettre en œuvre les outils fondamentaux de sécurisation d'une infrastructure (Validé par la
+                            mise en place de la redondance HSRP pour assurer la disponibilité).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC21.06 : Travail en équipe</h4>
+                        <p>Travailler en équipe (Validé par la co-conception du Plan IP avec les autres membres du
+                            groupe).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li><strong>Stacking Cisco 3750 :</strong> J'ai configuré le Stack SWR1 (Cœur de réseau) en
+                        assemblant physiquement et logiquement plusieurs switchs pour augmenter la bande passante et
+                        simplifier la gestion.</li>
+                    <li><strong>Protocole HSRP :</strong> J'ai implémenté le protocole HSRP (Hot Standby Router
+                        Protocol) entre les deux stacks (SWR1 et SWR2) en mode Actif/Passif. Cela garantit que si le
+                        cœur de réseau principal tombe, le secondaire prend le relais sans coupure pour les
+                        utilisateurs.</li>
+                    <li><strong>Commutation & VLANs :</strong> Configuration du switch d'accès SW3 et déploiement des
+                        VLANs métiers (700, 120, 130...) selon l'organigramme de l'entreprise.</li>
+                    <li><strong>Plan d'Adressage :</strong> J'ai participé à l'élaboration du plan IP (VLSM) pour
+                        optimiser l'espace d'adressage privé.</li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves (Traces)</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/Schéma-303.png" alt="Schéma Physique du Réseau"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">
+                            Schéma Physique du Réseau</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/IP.png" alt="Extrait du tableau de synthèse du plan d'adressage IP"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Extrait du
+                            tableau de synthèse du plan d'adressage IP</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Défi :</strong> La difficulté majeure était de comprendre la différence entre un Stack
+                        physique et le protocole HSRP (redondance logique), et de faire cohabiter les deux.</p>
+                    <p style="margin-top: 1rem;"><strong>Solution :</strong> J'ai dû maquetter l'architecture sur papier
+                        avant de configurer pour éviter les conflits d'IP virtuelle (VIP).</p>
+                    <p style="margin-top: 1rem;"><strong>Bilan :</strong> Ce projet m'a fait progresser sur les
+                        architectures résilientes. Je sais maintenant comment éviter qu'un réseau tombe en panne à cause
+                        d'un seul câble débranché.</p>
+                </div>
+            </section>
+
+            <hr style="margin: 4rem 0; border: 0; border-top: 2px solid #ddd;">
+
+            <div class="sae-detail-header"
+                style="background: linear-gradient(135deg, #2c3e50 0%, #c0392b 100%); margin: -2rem -2rem 2rem -2rem; padding: 2rem; border-radius: 0.5rem;">
+                <h2 style="color: white; margin: 0;">Phase 2 : Audit de Sécurité & Pentesting (Red Team)</h2>
+            </div>
+
+            <section class="detail-section">
+                <h2 style="color: #c0392b;">Contexte de l'audit</h2>
+                <div
+                    style="background: #fff5f5; padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 4px solid #c0392b;">
+                    <p><strong>Contexte :</strong> Dans le cadre d'un 'audit croisé', j'ai dû auditer l'infrastructure
+                        Windows/AD déployée par un autre groupe d'étudiants.</p>
+                    <p style="margin-top: 1rem;"><strong>Objectif :</strong> Identifier les vulnérabilités, élever mes
+                        privilèges et compromettre le Contrôleur de Domaine.</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Compétences Cyber mobilisées</h2>
+                <div class="profile-grid">
+                    <div class="profile-card" style="border-top: 4px solid #c0392b;">
+                        <h4>AC25.02 : Outils Pentest</h4>
+                        <p>Prendre en main des outils de test de pénétration (Validé par l'utilisation de la suite
+                            Impacket et NetExec).</p>
+                    </div>
+                    <div class="profile-card" style="border-top: 4px solid #c0392b;">
+                        <h4>AC24.05 : Types d'attaque</h4>
+                        <p>Connaître les différents types d'attaque (Validé par l'exploitation de Kerberoasting et
+                            DCSync).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Scénario d'attaque (Kill Chain)</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li
+                        style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 4px solid #e74c3c;">
+                        <strong>1. Accès initial :</strong> J'ai obtenu un premier accès utilisateur via une attaque
+                        AS-REP Roasting.
+                    </li>
+                    <li
+                        style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 4px solid #e67e22;">
+                        <strong>2. Escalade de privilèges :</strong> En fouillant les partages SMB, j'ai trouvé un
+                        script <code>deploy_workstation.ps1</code> contenant des identifiants administrateurs en clair
+                        (Hardcoded Credentials) : le compte <code>ned.stark</code>.
+                    </li>
+                    <li
+                        style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 4px solid #f1c40f;">
+                        <strong>3. Compromission Totale :</strong> Après avoir validé que ce compte était Admin du
+                        domaine via NetExec (Pwn3d!), j'ai exécuté une attaque DCSync avec l'outil
+                        <code>impacket-secretsdump</code>.
+                    </li>
+                    <li
+                        style="background: white; padding: 1.5rem; margin-bottom: 1rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 4px solid #2ecc71;">
+                        <strong>4. Résultat :</strong> Exfiltration de la base NTDS.dit et récupération du hash du
+                        compte KRBTGT (Golden Ticket).
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Remédiation & Conseil Pro</h2>
+                <div
+                    style="background: #e8f8f5; padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid #1abc9c;">
+                    <p>Pour corriger ces failles, j'ai recommandé la suppression des mots de passe dans les scripts et
+                        l'utilisation de comptes de service gérés (GMSA).</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves (Traces - Phase 2)</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/NetExec.png" alt="Validation des accès administrateur avec NetExec"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Validation
+                            des accès administrateur avec NetExec</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/NTDS.png" alt="Extraction des hashs NTLM via l'attaque DCSync"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Extraction
+                            des hashs NTLM via l'attaque DCSync</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

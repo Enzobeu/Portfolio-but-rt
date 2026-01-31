@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 1.02 - Initiation Réseaux">
+    <title>Portfolio | SAÉ 1.02 Maquette Réseau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 1.02 - Initiation aux Réseaux : Déploiement d'une maquette complète</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Réalisation de ma première maquette réseau
+                    physique fonctionnelle.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p><strong>Projet :</strong> Réalisation de ma première maquette réseau physique fonctionnelle.</p>
+                    <p style="margin-top: 1rem;"><strong>Architecture :</strong> L'infrastructure comprenait deux
+                        switchs d'accès (Cisco 2960x), un cœur de réseau (Switch L3 Cisco 3750), des services hébergés
+                        sur Proxmox (Web, Samba) et un routage vers Internet via une Box Orange (Router Cisco 2911).</p>
+                    <p style="margin-top: 1rem;"><strong>Mon Rôle :</strong> J'étais responsable de la couche Accès et
+                        de la distribution des adresses IP (DHCP).</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Compétences & Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC11.03 : Configurer le LAN</h4>
+                        <p>Configurer les fonctions de base du réseau local (Validé par la configuration des switchs et
+                            du serveur DHCP).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC11.06 : Installer un poste</h4>
+                        <p>Installer un poste client (Validé par le raccordement et le test de connectivité des PC
+                            utilisateurs).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC11.05 : Diagnostic</h4>
+                        <p>Identifier les dysfonctionnements du réseau local (Validé lors des tests de ping et de
+                            résolution de pannes de câblage).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 1rem;"><strong>Commutation (Switching) :</strong> Configuration de deux
+                        switchs Cisco 2960x. J'ai mis en place les VLANs d'accès, nommé les équipements (hostname), et
+                        sécurisé les ports inutilisés.</li>
+                    <li style="margin-bottom: 1rem;"><strong>Services Réseaux (DHCP sur L3) :</strong> Configuration du
+                        switch Cisco 3750 pour qu'il agisse comme serveur DHCP. J'ai créé les pools d'adresses, défini
+                        les passerelles par défaut et les exclusions d'IP pour les serveurs.</li>
+                    <li><strong>Interconnexion :</strong> Raccordement physique des équipements (brassage) et
+                        vérification de la connectivité avec les services virtualisés sous Proxmox.</li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves (Traces)</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/Schéma-SAE102.png" alt="Photo de la baie de brassage avec la maquette câblée"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Schéma de la
+                            maquette câblée</p>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/DHCP-Pool.png" alt="Extrait de configuration CLI : Pool DHCP sur le Cisco 3750"
+                            style="width: 100%; height: auto; border-radius: 0.5rem;">
+                        <p style="text-align: center; margin-top: 0.5rem; color: #666; font-style: italic;">Extrait de
+                            configuration CLI : Pool DHCP sur le Cisco 3750</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Découverte :</strong> C'était mon premier contact avec la CLI Cisco (IOS). J'ai appris la
+                        rigueur nécessaire : une simple erreur de syntaxe peut couper tout le réseau.</p>
+                    <p style="margin-top: 1rem;"><strong>Progression :</strong> J'ai compris concrètement la différence
+                        entre un Switch L2 (transport) et un Switch L3 (routage/services). Voir les PC récupérer une IP
+                        automatiquement pour la première fois était une vraie satisfaction.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

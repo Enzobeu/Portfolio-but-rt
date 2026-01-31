@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ - Portfolio R&T">
+    <title>Portfolio | Détail SAÉ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ X.XX : Titre de la SAÉ</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Brève description ou "pitch" du projet.
+                </p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ophelia, une entreprise fictive, avait
+                        besoin de sécuriser son infrastructure réseau suite à une recrudescence d'attaques. Le but était
+                        de concevoir et déployer une architecture résiliente.</p>
+                    <p style="margin-top: 1rem;"><strong>Durée du projet :</strong> 4 semaines<br>
+                        <strong>Travail en équipe :</strong> 3 personnes
+                    </p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC 1 - Administrer</h4>
+                        <p>Savoir configurer les équipements réseaux (Switchs, Routeurs) et les serveurs (Linux/Windows)
+                            en respectant les exigences de sécurité.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC 2 - Sécuriser</h4>
+                        <p>Analyser les risques et mettre en œuvre des contre-mesures adaptées (Pare-feu, ACL, VPN).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Tâches réalisées</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li>Analyse du cahier des charges et définition de l'adressage IP.</li>
+                    <li>Configuration des VLANs et du routage inter-VLAN.</li>
+                    <li>Mise en place d'un serveur DHCP et DNS sécurisé.</li>
+                    <li>Configuration des règles de filtrage sur le pare-feu pfsense.</li>
+                    <li>Rédaction de la documentation technique et utilisateur.</li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <div
+                            style="height: 150px; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #777;">
+                            Capture d'écran 1</div>
+                    </div>
+                    <div class="proof-item">
+                        <div
+                            style="height: 150px; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #777;">
+                            Schéma Réseau</div>
+                    </div>
+                    <div class="proof-item">
+                        <div
+                            style="height: 150px; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #777;">
+                            Extrait Code/Script</div>
+                    </div>
+                </div>
+                <div style="margin-top: 1rem; text-align: center;">
+                    <a href="#" class="btn btn-outline" download>Télécharger le rapport complet (PDF)</a>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p>Ce projet m'a permis de consolider mes compétences en routage et en filtrage. J'ai rencontré des
+                        difficultés lors de la configuration du VPN, que j'ai surmontées en consultant la documentation
+                        officielle et en effectuant des tests unitaires. Je pense avoir acquis une bonne autonomie sur
+                        la configuration des pare-feux.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 1.05 - Traitement de Données & API">
+    <title>Portfolio | SAÉ 1.05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 1.05 : Traitement de Données & API (Projet Poké-Data)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Développement d'une application web
+                    interactive utilisant une API publique (PokéAPI).</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p>Ce projet consistait à développer un outil interactif web capable de récupérer des données
+                        dynamiques (format JSON) depuis une API publique. L'objectif était de traiter ces données et de
+                        les afficher de manière ludique.</p>
+                    <p style="margin-top: 1rem;">La fonctionnalité clé de l'application est un comparateur :
+                        l'utilisateur saisit le nom d'un Pokémon, et l'algorithme compare ses caractéristiques physiques
+                        (Poids et Taille) à celles d'une référence réelle insolite (le président Emmanuel Macron).</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC13.05 - Gestion de données</h4>
+                        <p>Choisir les mécanismes de gestion de données. Validé par l'utilisation d'une API REST pour
+                            extraire et exploiter des données structurées distantes.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC13.03 - Algorithmique</h4>
+                        <p>Traduire un algorithme dans un langage donné. Validé par l'écriture du script JS qui effectue
+                            la comparaison mathématique et gère l'affichage conditionnel.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 0.5rem;"><strong>Interaction API (Fetch) :</strong> Utilisation de
+                        JavaScript (fetch) pour interroger l'API Pokémon en temps réel et parsing de la réponse JSON
+                        pour isoler les variables <em>height</em> et <em>weight</em>.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Algorithme de Comparaison :</strong> Création d'une
+                        logique conditionnelle (Si Poids_Pokemon > Poids_Reference, alors...) et conversion des unités
+                        (hectogrammes/décimètres de l'API vers kg/m pour la comparaison).</li>
+                    <li><strong>Interface Utilisateur :</strong> Mise en place d'un formulaire de saisie simple et
+                        affichage dynamique des résultats par manipulation du DOM, sans rechargement de page.</li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/sae105-comparateur.png"
+                            alt="Interface du site montrant une comparaison (ex: Ronflex vs Macron)"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Interface
+                            Comparateur</div>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/sae105-js.png"
+                            alt="Extrait du code JavaScript (Fonction fetch et logique de comparaison)"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Logique JS
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Technique :</strong> Ce projet m'a permis de comprendre concrètement le concept d'API
+                        REST et l'importance du format JSON pour l'échange de données. C'est une compétence fondamentale
+                        qui me sert aujourd'hui pour l'automatisation réseau (Python/Ansible).</p>
+                    <p style="margin-top: 1rem;"><strong>Fun Fact :</strong> Au-delà de l'aspect ludique, ce projet m'a
+                        appris l'importance de la gestion des erreurs (ex: gérer le cas où l'utilisateur tape un nom de
+                        Pokémon qui n'existe pas).</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
