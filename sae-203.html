@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 2.03 - Application Météo Dynamique">
+    <title>Portfolio | SAÉ 2.03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 2.03 : Application Météo Dynamique (Instant Weather V2)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Développement d'une Single Page
+                    Application (SPA) consommant plusieurs API (Météo & Géo).</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p>Le projet consistait à développer une Single Page Application (SPA) permettant de consulter la
+                        météo de n'importe quelle commune française. C'était un projet individuel avec une forte
+                        exigence sur la qualité du code (respect des standards W3C) et l'expérience utilisateur (UX).
+                    </p>
+                    <p style="margin-top: 1rem;"><strong>Le Défi :</strong> Consommer et orchestrer deux API distinctes.
+                        D'abord l'API GéoGouv pour identifier la commune recherchée, puis l'API Météo Concept pour
+                        récupérer les prévisions correspondantes, le tout sans rechargement de page.</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC13.03 - Traduire un algorithme</h4>
+                        <p>Validé par la fonction <code>displayWeather()</code> qui transforme un tableau de données
+                            JSON brut en cartes visuelles, en appliquant des classes CSS conditionnelles (ex:
+                            <code>.sunny-gradient</code>) selon les données reçues.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC13.04 - Architecture Web</h4>
+                        <p>Validé par la manipulation avancée du DOM (<code>createElement</code>,
+                            <code>appendChild</code>) et la gestion dynamique du Dark Mode via l'injection de classes
+                            CSS.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC13.01 - Outils & Git</h4>
+                        <p>Validé par la gestion rigoureuse de l'historique des commits et l'intégration de
+                            bibliothèques tierces comme <strong>Leaflet.js</strong>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 0.5rem;"><strong>Double Appel API :</strong> Chaînage des requêtes fetch
+                        asynchrones. Conversion Code Postal &rarr; Code INSEE via API GéoGouv, puis récupération des
+                        prévisions via API Météo Concept.</li>
+                    <li style="margin-bottom: 0.5rem;"><strong>Cartographie Interactive (Bonus) :</strong> Intégration
+                        de la librairie <em>Leaflet.js</em>. La carte se centre automatiquement sur la ville recherchée
+                        et affiche un marqueur grâce aux coordonnées (Lat/Lon) renvoyées par l'API.</li>
+                    <li><strong>Expérience Utilisateur (UX) :</strong>
+                        <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                            <li>Ajout d'un <strong>Mode Sombre (Dark Mode)</strong> complet basculant tout le thème via
+                                un bouton toggle.</li>
+                            <li>Design réactif avec des dégradés de couleurs (Gradients) changeant selon la météo
+                                (Ensoleillé, Nuageux, Pluvieux).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/sae203-interface.png"
+                            alt="Interface principale montrant la carte Leaflet et les prévisions en mode sombre"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Interface Dark
+                            Mode avec Leaflet</div>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/sae203-code.png"
+                            alt="Extrait du script.js montrant la gestion de la carte (Leaflet) et le fetch API"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Code JS :
+                            Fetch & Map</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Réussite :</strong> Je suis particulièrement fier de l'intégration de la carte
+                        interactive. Au début, synchroniser l'affichage météo avec le repositionnement du marqueur GPS
+                        était complexe, mais cela apporte une vraie dimension "Pro" et immersive à l'application.</p>
+                    <p style="margin-top: 1rem;"><strong>Recul :</strong> J'ai compris l'intérêt majeur de bien séparer
+                        la logique (JS) de la vue (HTML/CSS). Si je devais refaire le projet aujourd'hui, j'envisagerais
+                        d'utiliser un framework réactif comme <strong>Vue.js</strong> ou <strong>React</strong> pour
+                        simplifier la gestion des mises à jour du DOM.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
