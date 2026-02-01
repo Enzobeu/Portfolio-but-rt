@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 2.01 - Administration Réseaux & Systèmes">
+    <title>Portfolio | SAÉ 2.01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 2.01 : Administration Réseaux & Systèmes (Petite Structure)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Double Objectif : Validation Cisco CCNA2
+                    et déploiement d'un environnement Active Directory.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p>Cette SAÉ avait un double objectif ambitieux : valider les compétences de commutation avancée
+                        (via la préparation à la <strong>certification Cisco CCNA2</strong>) et mettre en place un
+                        environnement système centralisé basé sur <strong>Active Directory</strong>.</p>
+                    <p style="margin-top: 1rem;">Le scénario pédagogique consistait à déployer de A à Z l'infrastructure
+                        informatique d'une PME fictive. Cela incluait la conception de la segmentation réseau (VLANs)
+                        pour la sécurité et la performance, ainsi que la mise en œuvre d'une gestion centralisée des
+                        utilisateurs pour l'administration.</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC11.03 - Configurer les fonctions de base</h4>
+                        <p>Validé par la réussite de la certification <strong>Cisco CCNA2</strong> (Switching, Routing,
+                            and Wireless Essentials), attestant de la maîtrise des équipements actifs.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC12.04 - Intégrer les services</h4>
+                        <p>Validé par l'installation et le paramétrage complet d'un <strong>contrôleur de domaine
+                                Windows Server</strong> et l'intégration effective de postes clients Windows 10.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 1.5rem;"><strong>1. Volet Réseau (Cisco CCNA2) :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Apprentissage et mise en pratique des concepts de commutation : Configuration des
+                                <strong>VLANs</strong>, mise en place de liens <strong>Trunk (802.1Q)</strong>,
+                                stabilisation avec <strong>STP (Spanning Tree Protocol)</strong> et agrégation de liens
+                                via <strong>EtherChannel</strong>.</li>
+                            <li>Configuration du <strong>Routage inter-VLAN</strong> (méthode Router-on-a-stick) pour
+                                permettre la communication contrôlée entre les différents services de l'entreprise.</li>
+                        </ul>
+                    </li>
+                    <li><strong>2. Volet Système (Windows Server / Active Directory) :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Installation de Windows Server et promotion en tant que <strong>Contrôleur de Domaine
+                                    (AD DS)</strong>.</li>
+                            <li><strong>Gestion des Objets :</strong> Création d'une arborescence d'Unités
+                                d'Organisation (OU) logique et hiérarchique (Services, Étage, Type de poste) et gestion
+                                fine des Groupes de sécurité.</li>
+                            <li><strong>Stratégies de Groupe (GPO) :</strong> Création de GPO pour automatiser la
+                                configuration des postes clients (ex: Montage automatique de lecteurs réseau,
+                                déploiement de fond d'écran, restrictions du Panneau de configuration).</li>
+                            <li><strong>Intégration :</strong> Jonction réussie de clients Windows 10 au domaine et
+                                vérification de la bonne application des droits et restrictions.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/sae201-ad.png"
+                            alt="Console 'Utilisateurs et ordinateurs Active Directory' montrant la structure des OU"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Structure
+                            Active Directory (OU)</div>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/sae201-badge.png"
+                            alt="Badge de réussite Cisco NetAcad - CCNAv7: Switching, Routing, and Wireless Essentials"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Certification
+                            Cisco CCNA2</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Synthèse :</strong> Ce projet m'a fait comprendre l'importance cruciale de la rigueur
+                        dans le nommage (<em>Naming Convention</em>). J'ai réalisé qu'une Active Directory mal organisée
+                        dès le départ devient rapidement ingérable.</p>
+                    <p style="margin-top: 1rem;"><strong>Lien Réseau/Système :</strong> J'ai pu constater concrètement
+                        l'interdépendance des services : sans un service DNS correctement configuré sur le serveur, le
+                        niveau réseau fonctionne (le ping IP passe), mais l'intégration au domaine est impossible. C'est
+                        une leçon fondamentale pour le diagnostic de pannes.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption" style="text-align: center; color: #ccc; padding: 10px 0;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
