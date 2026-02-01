@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 2.02 - Mesure et Caractérisation de Signaux">
+    <title>Portfolio | SAÉ 2.02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 2.02 : Mesure et Caractérisation de Signaux (Radio & Mobile)</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Introduction au traitement du signal, aux
+                    radiofréquences (RF) et utilisation de MATLAB.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p>Cette SAÉ s'inscrit dans le cadre de l'introduction au traitement du signal et aux
+                        radiofréquences (RF). L'objectif principal était d'utiliser une chaîne d'acquisition SDR
+                        (Software Defined Radio) couplée au langage MATLAB pour analyser des spectres réels, notamment
+                        la bande FM et la téléphonie mobile.</p>
+                    <p style="margin-top: 1rem;">En amont des travaux pratiques, j'ai suivi une formation certifiante
+                        pour obtenir la certification officielle <strong>'MATLAB Onramp'</strong> (MathWorks).</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC12.01 - Mesurer et analyser</h4>
+                        <p>Validé par l'analyse spectrale fine des signaux FM (Distinction Mono/Stéréo) et la mesure
+                            précise de l'OBW (Occupied Bandwidth) des antennes relais mobiles.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC13.02 - Programmer</h4>
+                        <p>Validé par l'écriture et l'utilisation de scripts MATLAB pour traiter, filtrer et visualiser
+                            les données brutes issues du dongle RTL-SDR.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC12.02 - Caractériser des systèmes</h4>
+                        <p>Validé par l'étude comparative technique entre la radio analogique (FM) et la radio numérique
+                            (DAB+), mettant en avant l'efficacité spectrale et le multiplexage.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 1.5rem;"><strong>1. Analyse Radio FM & RDS (TP) :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Utilisation du logiciel HDSDR et d'une clé RTL-SDR pour capturer la bande FM (87.5 - 108
+                                MHz).</li>
+                            <li>Distinction technique entre le signal <strong>Mono</strong> (Information) et
+                                <strong>Stéréo</strong> (Musique) via la visualisation de la sous-porteuse pilote à 19
+                                kHz et du signal RDS à 57 kHz.</li>
+                            <li>Comparaison théorique avec le standard DAB+ (Multiplexage, meilleure robustesse,
+                                encodage HE-AAC).</li>
+                        </ul>
+                    </li>
+                    <li><strong>2. Projet 'Chasse au Spectre' (Binôme) :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Cartographie des émetteurs de téléphonie mobile (4G/5G) autour du campus (IUT Caen) via
+                                <em>Cartoradio.fr</em>.</li>
+                            <li>Acquisition de signaux réels sur le terrain avec une antenne et MATLAB (plage 400 MHz -
+                                1700 MHz).</li>
+                            <li>Identification des opérateurs (Orange/SFR...) en analysant la fréquence centrale et la
+                                largeur de bande (OBW) des canaux descendants (Downstream).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/sae202-matlab.png" alt="Certificat officiel MathWorks - MATLAB Onramp"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Certification
+                            MATLAB Onramp</div>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/sae202-spectre.png"
+                            alt="Analyse spectrale sous MATLAB : Visualisation d'un canal de téléphonie mobile"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Analyse
+                            spectrale MATLAB</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Technique :</strong> J'ai découvert que la radio n'est pas "magique" mais purement
+                        mathématique. J'ai appris à manipuler concrètement les concepts de Gain, de Fréquence
+                        d'échantillonnage et de Bruit.</p>
+                    <p style="margin-top: 1rem;"><strong>Outils :</strong> La maîtrise de MATLAB est un atout majeur
+                        pour l'ingénierie, permettant de "visualiser l'invisible" (les ondes) et de traiter des données
+                        complexes.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
