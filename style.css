@@ -420,3 +420,74 @@ footer {
         font-size: 2.5rem;
     }
 }
+
+/* Lightbox */
+.trace-img,
+.side-img,
+figure img,
+.proof-item img {
+    cursor: zoom-in;
+    transition: transform 0.2s;
+}
+
+.trace-img:hover,
+.side-img:hover,
+figure img:hover,
+.proof-item img:hover {
+    transform: scale(1.02);
+}
+
+.lightbox {
+    display: none;
+    /* Caché par défaut */
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fond sombre */
+    backdrop-filter: blur(8px);
+    /* L'effet de flou magique */
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-lightbox:hover {
+    color: #bbb;
+}
