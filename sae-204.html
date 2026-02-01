@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détail de la SAÉ 2.04 - Projet Intégratif Architecture Transverse">
+    <title>Portfolio | SAÉ 2.04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio <span>R&T</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="sae.html" class="active">Mes SAÉ</a></li>
+                    <li><a href="bilan.html">Bilans</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="sae-detail-header">
+            <div class="container">
+                <a href="sae.html"
+                    style="color: rgba(255,255,255,0.8); margin-bottom: 1rem; display: inline-block;">&larr; Retour aux
+                    SAÉ</a>
+                <h1>SAÉ 2.04 : Projet Intégratif : Architecture Transverse</h1>
+                <p style="font-size: 1.2rem; margin-top: 1rem; opacity: 0.9;">Projet multidisciplinaire connectant
+                    Réseaux, Télécoms et Sciences.</p>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 4rem;">
+
+            <section class="detail-section">
+                <h2>Contexte & Objectifs</h2>
+                <div style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <p><strong>Le Défi :</strong> Ce projet intégratif avait pour but de concevoir une infrastructure
+                        complète en connectant des compétences variées : Administration Réseau, Télécommunications,
+                        Mathématiques et Anglais technique.</p>
+                    <p style="margin-top: 1rem;"><strong>Objectif Réseau :</strong> Déployer une maquette fonctionnelle
+                        interconnectant un cœur de réseau physique (Cisco) avec une infrastructure virtualisée
+                        (Proxmox/GNS3), simulant un environnement d'entreprise complexe.</p>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Apprentissages Critiques (AC)</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>AC11.03 - Administrer les réseaux</h4>
+                        <p>Validé par la configuration avancée du matériel Cisco (Switchs Cœur & Accès) et la
+                            segmentation VLAN rigoureuse.</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC12.01 - Mesurer et analyser</h4>
+                        <p>Validé par l'analyse spectrale sur la bande ISM avec la chaîne d'acquisition SDR
+                            (ADALM-PLUTO).</p>
+                    </div>
+                    <div class="profile-card">
+                        <h4>AC14.01 - Exigences scientifiques</h4>
+                        <p>Validé par l'implémentation et la compréhension d'algorithmes mathématiques d'optimisation
+                            (Newton, Sturm).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Réalisation & Tâches Techniques</h2>
+                <ul
+                    style="list-style-type: disc; padding-left: 2rem; background: var(--white); padding: 2rem 2rem 2rem 4rem; border-radius: 0.5rem; box-shadow: var(--shadow);">
+                    <li style="margin-bottom: 1.5rem;"><strong>1. Architecture Réseaux & Systèmes (Mon Rôle Principal)
+                            :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li><strong>Responsabilité :</strong> Configuration du cœur de réseau (Cisco Catalyst 3750)
+                                et des switchs d'accès (Cisco 2960X).</li>
+                            <li><strong>Topologie :</strong> Déploiement de VLANs segmentés par service (Services
+                                Logiciels .7.0, Compta .7.64, Supervision .8.0...).</li>
+                            <li><strong>Haute Disponibilité :</strong> Mise en place de liens agrégés
+                                (EtherChannel/LACP) entre le cœur et les accès pour la redondance et la bande passante.
+                            </li>
+                            <li><strong>Hybridation :</strong> Interconnexion du matériel physique avec une baie Proxmox
+                                hébergeant des VM Debian et une maquette GNS3.</li>
+                        </ul>
+                    </li>
+                    <li style="margin-bottom: 1.5rem;"><strong>2. Télécommunications & SDR :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li>Utilisation du module <strong>ADALM-PLUTO</strong> et de l'environnement
+                                Matlab/Simulink.</li>
+                            <li>Réalisation de mesures spectrales réelles sur les bandes ISM (Industriel, Scientifique
+                                et Médical).</li>
+                        </ul>
+                    </li>
+                    <li><strong>3. Sciences & Humanités :</strong>
+                        <ul style="margin-top: 0.5rem; list-style-type: circle;">
+                            <li><strong>Maths :</strong> Résolution de problèmes par méthodes numériques (Dichotomie,
+                                Méthode de Sturm et Newton pour la résolution de polynômes).</li>
+                            <li><strong>Anglais :</strong> Maîtrise du vocabulaire technique spécifique aux
+                                infrastructures R&T (Lecture de Datasheets, Normes).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Preuves</h2>
+                <div class="proof-gallery">
+                    <div class="proof-item">
+                        <img src="assets/sae204-schema.png"
+                            alt="Schéma Logique de l'infrastructure (VLANs, Adressage et Topologie Physique/Virtuelle)"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Schéma de
+                            l'Infrastructure Hybride</div>
+                    </div>
+                    <div class="proof-item">
+                        <img src="assets/sae204-matlab.png"
+                            alt="Simulink/Matlab : Chaîne d'acquisition spectrale avec ADALM-PLUTO"
+                            style="width: 100%; height: auto; display: block;">
+                        <div style="padding: 0.5rem; text-align: center; color: #666; font-size: 0.9rem;">Chaîne
+                            d'Acquisition SDR</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Autoévaluation</h2>
+                <div
+                    style="background: var(--white); padding: 2rem; border-radius: 0.5rem; box-shadow: var(--shadow); border-left: 5px solid var(--accent-color);">
+                    <p><strong>Technique :</strong> Ce projet m'a permis de voir les limites de la simulation. Connecter
+                        du vrai matériel (Cisco 3750) à du virtuel (Proxmox) engendre des complexités de câblage et de
+                        protocole qu'on ne voit pas sur Packet Tracer.</p>
+                    <p style="margin-top: 1rem;"><strong>Transversalité :</strong> J'ai compris que les maths ne sont
+                        pas abstraites : les méthodes d'optimisation étudiées sont celles utilisées concrètement dans
+                        les algorithmes de routage et de traitement du signal.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Portfolio BUT R&T Cybersécurité. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption" style="text-align: center; color: #ccc; padding: 10px 0;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
