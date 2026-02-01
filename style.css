@@ -335,6 +335,41 @@ footer {
     border-radius: 0 0.5rem 0.5rem 0;
 }
 
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: flex-start;
+}
+
+.btn-project {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007aff;
+    /* Bleu Apple standard */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-project:hover {
+    background-color: #005ecb;
+    transform: translateY(-2px);
+}
+
+.btn-github {
+    background-color: #333;
+    /* Couleur GitHub */
+}
+
+.btn-github:hover {
+    background-color: #000;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hamburger {
